@@ -1,0 +1,30 @@
+{
+  "name": "eslint-config-skype",
+  "version": "0.0.1",
+  "description": "Shared ESLint config for TypeScript projects produced by Skype Team",
+  "author": {
+    "name": "Alexander Tarasyuk",
+    "email": "alexander.tarasyuk@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a-tarasyuk/eslint-config-skype.git"
+  },
+  "bugs": {
+    "url": "https://github.com/a-tarasyuk/eslint-config-skype/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "skype",
+    "typescript"
+  ],
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0"
+  },
+  "main": "index.js",
+  "license": "MIT"
+}
