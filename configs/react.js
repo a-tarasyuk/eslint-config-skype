@@ -13,6 +13,7 @@ module.exports = {
     'jsx-equals-spacing': [
       'error',
       'never'
-    ]
+    ],
+    'no-danger': 'error',
   }
 }
