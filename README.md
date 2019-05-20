@@ -13,7 +13,7 @@ Create `.eslintrc` in your project root directory and copy the following into th
 
 ```json
 {
-  "extends": ["skype"],
+  "extends": ["skype"]
 }
 ```
 
