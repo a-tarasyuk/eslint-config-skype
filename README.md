@@ -6,27 +6,24 @@
 ## Installation
 
 ```bash
-npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-skype
+npm install --save-dev eslint eslint-config-skype
 ```
 
 Create `.eslintrc` in your project root directory and copy the following into the file:
 
 ```json
 {
-  "extends": ["eslint-config-skype"],
+  "extends": ["skype"],
 }
 ```
 
 #### React
 
-```bash
-npm install --save-dev eslint eslint-plugin-react eslint-config-skype
-```
 Create `.eslintrc` in your project root directory and copy the following into the file:
 
 ```json
 {
-  "extends": ["eslint-config-skype", "eslint-config-skype/react"],
+  "extends": ["skype", "skype/react"],
 }
 ```
 
