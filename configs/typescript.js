@@ -88,6 +88,7 @@ module.exports = {
     'no-self-assign': 'error',
     'no-sparse-arrays': 'error',
     'no-this-before-super': 'error',
+    'no-throw-literal': 'error',
     'no-trailing-spaces': 'error',
     'no-var': 'error',
     'no-undef': 'error',
