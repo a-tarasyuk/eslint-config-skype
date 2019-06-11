@@ -89,6 +89,7 @@ module.exports = {
     'no-sparse-arrays': 'error',
     'no-this-before-super': 'error',
     'no-trailing-spaces': 'error',
+    'no-var': 'error',
     'no-undef': 'error',
     'no-underscore-dangle': 'off',
     'no-unexpected-multiline': 'error',
