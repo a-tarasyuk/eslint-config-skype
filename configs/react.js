@@ -14,6 +14,10 @@ module.exports = {
       'error',
       'never'
     ],
-    'no-danger': 'error',
+    'jsx-quotes': [
+      'error',
+      'prefer-single'
+    ],
+    'no-danger': 'error'
   }
 }
