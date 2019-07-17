@@ -6,18 +6,20 @@ module.exports = {
     'react'
   ],
   rules: {
-    'jsx-curly-spacing': [
+    'react/jsx-curly-spacing': [
       'error',
       'always'
     ],
-    'jsx-equals-spacing': [
+    'react/jsx-equals-spacing': [
       'error',
       'never'
     ],
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react/no-danger': 'error',
     'jsx-quotes': [
       'error',
       'prefer-single'
     ],
-    'no-danger': 'error'
   }
 }

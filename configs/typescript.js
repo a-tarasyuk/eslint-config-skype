@@ -166,7 +166,9 @@ module.exports = {
       {
         'allows': [
           'private',
-          'protected'
+          'protected',
+          'private readonly',
+          'protected readonly',
         ]
       }
     ],
