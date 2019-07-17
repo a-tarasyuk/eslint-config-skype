@@ -140,7 +140,8 @@ module.exports = {
       4,
       {
         'FunctionExpression': {
-          'parameters': 'first'
+          'parameters': 2,
+          'body': 1
         }
       }
     ],
