@@ -142,6 +142,10 @@ module.exports = {
         'FunctionExpression': {
           'parameters': 2,
           'body': 1
+        },
+        'FunctionDeclaration': {
+          'parameters': 2,
+          'body': 1
         }
       }
     ],
