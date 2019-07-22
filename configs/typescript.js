@@ -128,6 +128,7 @@ module.exports = {
     'camelcase': 'off',
     '@typescript-eslint/camelcase': 'error',
     '@typescript-eslint/class-name-casing': 'error',
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
@@ -178,7 +179,6 @@ module.exports = {
         ]
       }
     ],
-    '@typescript-eslint/no-triple-slash-reference': 'error',
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
@@ -195,10 +195,17 @@ module.exports = {
       }
     ],
     '@typescript-eslint/no-var-requires': 'error',
-    '@typescript-eslint/prefer-interface': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     'semi': 'off',
     '@typescript-eslint/semi': 'error',
+    '@typescript-eslint/triple-slash-reference': [
+      'error',
+      {
+        path: 'never',
+        types: 'never',
+        lib: 'never'
+      }
+    ],
     '@typescript-eslint/type-annotation-spacing': 'error'
   }
 }
