@@ -97,7 +97,6 @@ module.exports = {
     'no-throw-literal': 'error',
     'no-trailing-spaces': 'error',
     'no-var': 'error',
-    'no-undef': 'error',
     'no-underscore-dangle': 'off',
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
