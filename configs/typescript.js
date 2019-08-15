@@ -157,7 +157,13 @@ module.exports = {
     ],
     '@typescript-eslint/interface-name-prefix': 'error',
     '@typescript-eslint/member-delimiter-style': 'error',
-    '@typescript-eslint/no-angle-bracket-type-assertion': 'error',
+    '@typescript-eslint/consistent-type-assertions': [
+      'error',
+      {
+        objectLiteralTypeAssertions: 'never',
+        assertionStyle: 'as'
+      }
+    ],
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-empty-interface': 'off',
@@ -166,7 +172,6 @@ module.exports = {
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-namespace': 'error',
     '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/no-object-literal-type-assertion': 'error',
     '@typescript-eslint/no-parameter-properties': [
       'error',
       {
