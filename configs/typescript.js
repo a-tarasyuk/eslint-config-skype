@@ -105,13 +105,6 @@ module.exports = {
     'no-unused-expressions': 'error',
     'no-unused-labels': 'error',
     'no-useless-escape': 'error',
-    'quotes': [
-      'error',
-      'single',
-      {
-        'allowTemplateLiterals': true
-      }
-    ],
     'radix': [
       'error',
       'always'
@@ -200,6 +193,14 @@ module.exports = {
     ],
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
+    'quotes': 'off',
+    '@typescript-eslint/quotes': [
+      'error',
+      'single',
+      {
+        'allowTemplateLiterals': true
+      }
+    ],
     'semi': 'off',
     '@typescript-eslint/semi': 'error',
     '@typescript-eslint/triple-slash-reference': [
