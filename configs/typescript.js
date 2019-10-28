@@ -48,6 +48,18 @@ module.exports = {
     'for-direction': 'error',
     'getter-return': 'error',
     'guard-for-in': 'error',
+    'keyword-spacing': [
+      'error',
+      {
+        before: true,
+        after: true,
+        overrides: {
+          return: { after: true },
+          throw: { after: true },
+          case: { after: true }
+        }
+      }
+    ],
     'max-len': [
       'error',
       {
