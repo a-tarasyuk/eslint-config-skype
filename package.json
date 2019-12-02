@@ -20,10 +20,16 @@
     "typescript"
   ],
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.3.2",
-    "@typescript-eslint/parser": "^2.3.2",
-    "eslint-plugin-react": "^7.15.0",
-    "eslint": "^6.5.1"
+    "@typescript-eslint/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/parser": "^2.9.0",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint": "^6.7.2"
+  },
+  "scripts": {
+    "format": "prettier --write \"./**/*.{js,md}\""
+  },
+  "devDependencies": {
+    "prettier": "1.19.1"
   },
   "main": "index.js",
   "license": "MIT"
