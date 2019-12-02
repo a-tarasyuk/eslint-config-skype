@@ -5,19 +5,17 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-      modules: true
+      modules: true,
     },
   },
   env: {
     browser: true,
     commonjs: true,
     node: true,
-    es6: true
+    es6: true,
   },
   root: true,
-  plugins: [
-    '@typescript-eslint'
-  ],
+  plugins: ['@typescript-eslint'],
   rules: {
     'comma-dangle': [
       'error',
@@ -26,24 +24,18 @@ module.exports = {
         objects: 'always-multiline',
         imports: 'always-multiline',
         exports: 'always-multiline',
-        functions: 'always-multiline'
-      }
+        functions: 'always-multiline',
+      },
     ],
     'constructor-super': 'error',
-    'curly': [
-      'error',
-      'all'
-    ],
-    'eol-last': [
-      'error',
-      'always'
-    ],
-    'eqeqeq': [
+    curly: ['error', 'all'],
+    'eol-last': ['error', 'always'],
+    eqeqeq: [
       'error',
       'always',
       {
-        'null': 'ignore'
-      }
+        null: 'ignore',
+      },
     ],
     'for-direction': 'error',
     'getter-return': 'error',
@@ -56,17 +48,16 @@ module.exports = {
         overrides: {
           return: { after: true },
           throw: { after: true },
-          case: { after: true }
-        }
-      }
+          case: { after: true },
+        },
+      },
     ],
     'max-len': [
       'error',
       {
-        'code': 140
-      }
+        code: 140,
+      },
     ],
-    'no-bitwise': 'off',
     'no-caller': 'error',
     'no-case-declarations': 'error',
     'no-class-assign': 'error',
@@ -109,7 +100,6 @@ module.exports = {
     'no-throw-literal': 'error',
     'no-trailing-spaces': 'error',
     'no-var': 'error',
-    'no-underscore-dangle': 'off',
     'no-unexpected-multiline': 'error',
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
@@ -117,10 +107,7 @@ module.exports = {
     'no-unused-expressions': 'error',
     'no-unused-labels': 'error',
     'no-useless-escape': 'error',
-    'radix': [
-      'error',
-      'always'
-    ],
+    radix: ['error', 'always'],
     'require-yield': 'error',
     'use-isnan': 'error',
     'valid-typeof': 'error',
@@ -129,100 +116,112 @@ module.exports = {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/ban-types': 'error',
-    'camelcase': 'off',
+
+    camelcase: 'off',
     '@typescript-eslint/camelcase': 'error',
+
     '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
-        'allowExpressions': true
-      }
+        allowExpressions: true,
+      },
     ],
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
       {
-        'accessibility': 'no-public'
-      }
+        accessibility: 'no-public',
+      },
     ],
-    'indent': 'off',
+
+    indent: 'off',
     '@typescript-eslint/indent': [
       'error',
       4,
       {
-        'FunctionExpression': {
-          'parameters': 2,
-          'body': 1
+        FunctionExpression: {
+          parameters: 2,
+          body: 1,
         },
-        'FunctionDeclaration': {
-          'parameters': 2,
-          'body': 1
-        }
-      }
+        FunctionDeclaration: {
+          parameters: 2,
+          body: 1,
+        },
+      },
     ],
+
     '@typescript-eslint/interface-name-prefix': 'error',
     '@typescript-eslint/member-delimiter-style': 'error',
     '@typescript-eslint/consistent-type-assertions': [
       'error',
       {
         objectLiteralTypeAssertions: 'never',
-        assertionStyle: 'as'
-      }
+        assertionStyle: 'as',
+      },
     ],
+
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': 'error',
-    '@typescript-eslint/no-empty-interface': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
+
+    'no-empty-function': 'off',
+    '@typescript-eslint/no-empty-function': 'error',
+
     '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-namespace': 'error',
-    '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-parameter-properties': [
       'error',
       {
-        'allows': [
+        allows: [
           'private',
           'protected',
           'private readonly',
           'protected readonly',
-        ]
-      }
+        ],
+      },
     ],
+
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
-        'args': 'none'
-      }
+        args: 'none',
+      },
     ],
+
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
       {
-        'classes': false,
-        'functions': false
-      }
+        classes: false,
+        functions: false,
+      },
     ],
+
     '@typescript-eslint/no-var-requires': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
-    'quotes': 'off',
+
+    quotes: 'off',
     '@typescript-eslint/quotes': [
       'error',
       'single',
       {
-        'allowTemplateLiterals': true
-      }
+        allowTemplateLiterals: true,
+      },
     ],
-    'semi': 'off',
+
+    semi: 'off',
     '@typescript-eslint/semi': 'error',
+
     '@typescript-eslint/triple-slash-reference': [
       'error',
       {
         path: 'never',
         types: 'never',
-        lib: 'never'
-      }
+        lib: 'never',
+      },
     ],
-    '@typescript-eslint/type-annotation-spacing': 'error'
-  }
-}
+    '@typescript-eslint/type-annotation-spacing': 'error',
+  },
+};

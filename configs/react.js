@@ -1,25 +1,14 @@
 module.exports = {
   parserOptions: {
-    ecmaFeatures: { jsx: true }
+    ecmaFeatures: { jsx: true },
   },
-  plugins: [
-    'react'
-  ],
+  plugins: ['react'],
   rules: {
-    'react/jsx-curly-spacing': [
-      'error',
-      'always'
-    ],
-    'react/jsx-equals-spacing': [
-      'error',
-      'never'
-    ],
+    'react/jsx-curly-spacing': ['error', 'always'],
+    'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-danger': 'error',
-    'jsx-quotes': [
-      'error',
-      'prefer-single'
-    ],
-  }
-}
+    'jsx-quotes': ['error', 'prefer-single'],
+  },
+};
