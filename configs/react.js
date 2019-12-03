@@ -9,6 +9,7 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-danger': 'error',
+    'react/jsx-no-bind': ['error', { allowArrowFunctions: true }],
     'jsx-quotes': ['error', 'prefer-single'],
   },
 };

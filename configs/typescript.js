@@ -17,6 +17,9 @@ module.exports = {
   root: true,
   plugins: ['@typescript-eslint'],
   rules: {
+    'arrow-body-style': 'error',
+    'arrow-parens': ['error', 'as-needed'],
+    'capitalized-comments': 'error',
     'comma-dangle': [
       'error',
       {
@@ -29,6 +32,7 @@ module.exports = {
     ],
     'constructor-super': 'error',
     curly: ['error', 'all'],
+    'dot-notation': 'error',
     'eol-last': ['error', 'always'],
     eqeqeq: [
       'error',
@@ -52,12 +56,14 @@ module.exports = {
         },
       },
     ],
+    'linebreak-style': 'error',
     'max-len': [
       'error',
       {
         code: 140,
       },
     ],
+    'new-parens': 'error',
     'no-caller': 'error',
     'no-case-declarations': 'error',
     'no-class-assign': 'error',
@@ -73,6 +79,7 @@ module.exports = {
     'no-dupe-class-members': 'error',
     'no-dupe-keys': 'error',
     'no-duplicate-case': 'error',
+    'no-duplicate-imports': 'error',
     'no-empty': 'error',
     'no-empty-character-class': 'error',
     'no-empty-pattern': 'error',
@@ -85,6 +92,7 @@ module.exports = {
     'no-global-assign': 'error',
     'no-inner-declarations': 'error',
     'no-invalid-regexp': 'error',
+    'no-invalid-this': 'error',
     'no-irregular-whitespace': 'error',
     'no-mixed-spaces-and-tabs': 'error',
     'no-multiple-empty-lines': 'error',
@@ -96,19 +104,25 @@ module.exports = {
     'no-regex-spaces': 'error',
     'no-self-assign': 'error',
     'no-sparse-arrays': 'error',
+    'no-sequences': 'error',
     'no-this-before-super': 'error',
     'no-throw-literal': 'error',
     'no-trailing-spaces': 'error',
     'no-var': 'error',
     'no-unexpected-multiline': 'error',
+    'no-undef-init': 'error',
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
     'no-unused-expressions': 'error',
     'no-unused-labels': 'error',
     'no-useless-escape': 'error',
+    'one-var': ['error', 'never'],
+    'prefer-const': 'error',
     radix: ['error', 'always'],
     'require-yield': 'error',
+    'space-before-function-paren': ['error', 'never'],
+    'spaced-comment': ['error', 'never'],
     'use-isnan': 'error',
     'valid-typeof': 'error',
 
@@ -167,6 +181,7 @@ module.exports = {
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': 'error',
 
+    '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-namespace': 'error',
@@ -181,6 +196,7 @@ module.exports = {
         ],
       },
     ],
+    '@typescript-eslint/no-unnecessary-type-assertion': 'error',
 
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
