@@ -184,6 +184,14 @@ module.exports = {
 
     '@typescript-eslint/interface-name-prefix': 'error',
     '@typescript-eslint/member-delimiter-style': 'error',
+    '@typescript-eslint/member-naming': [
+      'error',
+      {
+        protected: '^[a-z_]\\w+$',
+        private: '^_[a-z]\\w+$',
+        public: '^(UNSAFE_)?[a-z]\\w+$',
+      },
+    ],
     '@typescript-eslint/consistent-type-assertions': [
       'error',
       {
