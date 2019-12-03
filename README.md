@@ -6,8 +6,8 @@
 
 ## Installation
 
-```bash
-npm install eslint-config-skype @typescript-eslint/eslint-plugin --save-dev
+```
+npm i -D eslint eslint-plugin-import @typescript-eslint/eslint-plugin eslint-config-skype
 ```
 
 Create `.eslintrc` in your project root directory and copy the following into the file:

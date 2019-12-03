@@ -9,13 +9,13 @@ module.exports = {
     },
   },
   env: {
-    browser: true,
     commonjs: true,
+    browser: true,
     node: true,
     es6: true,
   },
   root: true,
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'import'],
   rules: {
     'arrow-body-style': 'error',
     'arrow-parens': ['error', 'as-needed'],
@@ -125,6 +125,23 @@ module.exports = {
     'spaced-comment': ['error', 'never'],
     'use-isnan': 'error',
     'valid-typeof': 'error',
+
+    /** imports */
+    'no-duplicate-imports': 'error',
+    'import/order': [
+      'error',
+      {
+        'always-and-inside-groups': true,
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          'parent',
+          'sibling',
+          'index',
+        ],
+      },
+    ],
 
     /** TypeScript related rules */
     '@typescript-eslint/adjacent-overload-signatures': 'error',
