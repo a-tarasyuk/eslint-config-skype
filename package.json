@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-skype",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Shared ESLint config for TypeScript projects produced by Skype Team",
   "author": {
     "name": "Alexander Tarasyuk",
