@@ -130,7 +130,7 @@ module.exports = {
     'import/order': [
       'error',
       {
-        'always-and-inside-groups': true,
+        'newlines-between': 'always-and-inside-groups',
         groups: [
           'builtin',
           'external',
