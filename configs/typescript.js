@@ -19,7 +19,6 @@ module.exports = {
   rules: {
     'arrow-body-style': 'error',
     'arrow-parens': ['error', 'as-needed'],
-    'capitalized-comments': 'error',
     'comma-dangle': [
       'error',
       {
@@ -91,7 +90,6 @@ module.exports = {
     'no-global-assign': 'error',
     'no-inner-declarations': 'error',
     'no-invalid-regexp': 'error',
-    'no-invalid-this': 'error',
     'no-irregular-whitespace': 'error',
     'no-mixed-spaces-and-tabs': 'error',
     'no-multiple-empty-lines': 'error',
@@ -121,9 +119,11 @@ module.exports = {
     radix: ['error', 'always'],
     'require-yield': 'error',
     'space-before-function-paren': ['error', 'never'],
-    'spaced-comment': ['error', 'never'],
     'use-isnan': 'error',
     'valid-typeof': 'error',
+
+    /** comments */
+    'spaced-comment': ['error', 'always'],
 
     /** imports */
     'no-duplicate-imports': 'error',
