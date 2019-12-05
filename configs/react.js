@@ -2,6 +2,11 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: { jsx: true },
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   plugins: ['react'],
   rules: {
     'react/jsx-curly-spacing': ['error', 'always'],

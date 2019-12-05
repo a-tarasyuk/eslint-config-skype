@@ -14,6 +14,9 @@ Create `.eslintrc` in your project root directory and copy the following into th
 
 ```json
 {
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
   "extends": ["skype"]
 }
 ```

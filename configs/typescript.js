@@ -220,7 +220,6 @@ module.exports = {
         ],
       },
     ],
-    '@typescript-eslint/no-unnecessary-type-assertion': 'error',
 
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
@@ -263,5 +262,8 @@ module.exports = {
       },
     ],
     '@typescript-eslint/type-annotation-spacing': 'error',
+
+    /** Requiring type checking */
+    '@typescript-eslint/no-unnecessary-type-assertion': 'error',
   },
 };
