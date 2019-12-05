@@ -177,6 +177,7 @@ module.exports = {
           parameters: 2,
           body: 1,
         },
+        SwitchCase: 1,
       },
     ],
 
