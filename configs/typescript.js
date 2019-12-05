@@ -226,6 +226,7 @@ module.exports = {
       'error',
       {
         args: 'none',
+        ignoreRestSiblings: true,
       },
     ],
 
