@@ -118,7 +118,6 @@ module.exports = {
     'prefer-const': 'error',
     radix: ['error', 'always'],
     'require-yield': 'error',
-    'space-before-function-paren': ['error', 'never'],
     'use-isnan': 'error',
     'valid-typeof': 'error',
 
@@ -252,6 +251,9 @@ module.exports = {
 
     semi: 'off',
     '@typescript-eslint/semi': 'error',
+
+    'space-before-function-paren': 'off',
+    '@typescript-eslint/space-before-function-paren': ['error', 'never'],
 
     '@typescript-eslint/triple-slash-reference': [
       'error',
