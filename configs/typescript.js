@@ -206,6 +206,7 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 'error',
 
     '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/no-implied-eval': 'error',
     '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-namespace': 'error',
