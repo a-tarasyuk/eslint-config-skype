@@ -146,10 +146,60 @@ module.exports = {
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/ban-types': 'error',
 
-    camelcase: 'off',
-    '@typescript-eslint/camelcase': 'error',
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'default',
+        format: ['camelCase'],
+      },
+      {
+        selector: 'variable',
+        format: ['camelCase', 'UPPER_CASE'],
+      },
+      {
+        selector: 'parameter',
+        format: ['camelCase'],
+        leadingUnderscore: 'allow',
+      },
+      {
+        selector: 'method',
+        modifiers: ['private'],
+        format: ['camelCase'],
+        leadingUnderscore: 'require',
+        trailingUnderscore: 'forbid',
+      },
+      {
+        selector: 'method',
+        modifiers: ['protected'],
+        format: ['camelCase'],
+        leadingUnderscore: 'forbid',
+        trailingUnderscore: 'forbid',
+      },
+      {
+        selector: 'method',
+        modifiers: ['public'],
+        custom: {
+          regex: '^(UNSAFE_)?[a-z]\\w+$',
+          match: true,
+        },
+        format: [],
+        leadingUnderscore: 'forbid',
+        trailingUnderscore: 'forbid',
+      },
+      {
+        selector: 'interface',
+        custom: {
+          regex: '^I',
+          match: false,
+        },
+        format: [],
+      },
+      {
+        selector: 'typeLike',
+        format: ['PascalCase'],
+      },
+    ],
 
-    '@typescript-eslint/class-name-casing': 'error',
     '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
     '@typescript-eslint/explicit-function-return-type': [
       'error',
@@ -181,16 +231,7 @@ module.exports = {
       },
     ],
 
-    '@typescript-eslint/interface-name-prefix': 'error',
     '@typescript-eslint/member-delimiter-style': 'error',
-    '@typescript-eslint/member-naming': [
-      'error',
-      {
-        protected: '^[a-z_]\\w+$',
-        private: '^_[a-z]\\w+$',
-        public: '^(UNSAFE_)?[a-z]\\w+$',
-      },
-    ],
     '@typescript-eslint/consistent-type-assertions': [
       'error',
       {
