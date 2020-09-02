@@ -189,7 +189,7 @@ module.exports = {
       {
         selector: 'interface',
         custom: {
-          regex: '^I',
+          regex: '^I[A-Z]',
           match: false,
         },
         format: [],
