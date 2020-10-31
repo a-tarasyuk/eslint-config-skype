@@ -19,19 +19,8 @@ module.exports = {
   rules: {
     'arrow-body-style': 'error',
     'arrow-parens': ['error', 'as-needed'],
-    'comma-dangle': [
-      'error',
-      {
-        arrays: 'always-multiline',
-        objects: 'always-multiline',
-        imports: 'always-multiline',
-        exports: 'always-multiline',
-        functions: 'always-multiline',
-      },
-    ],
     'constructor-super': 'error',
     curly: ['error', 'all'],
-    'dot-notation': 'error',
     'eol-last': ['error', 'always'],
     eqeqeq: [
       'error',
@@ -43,18 +32,6 @@ module.exports = {
     'for-direction': 'error',
     'getter-return': 'error',
     'guard-for-in': 'error',
-    'keyword-spacing': [
-      'error',
-      {
-        before: true,
-        after: true,
-        overrides: {
-          return: { after: true },
-          throw: { after: true },
-          case: { after: true },
-        },
-      },
-    ],
     'linebreak-style': 'error',
     'max-len': [
       'error',
@@ -75,7 +52,6 @@ module.exports = {
     'no-debugger': 'error',
     'no-delete-var': 'error',
     'no-dupe-args': 'error',
-    'no-dupe-class-members': 'error',
     'no-dupe-keys': 'error',
     'no-duplicate-case': 'error',
     'no-empty': 'error',
@@ -84,7 +60,6 @@ module.exports = {
     'no-eval': 'error',
     'no-ex-assign': 'error',
     'no-extra-boolean-cast': 'error',
-    'no-extra-semi': 'error',
     'no-fallthrough': 'error',
     'no-func-assign': 'error',
     'no-global-assign': 'error',
@@ -97,13 +72,11 @@ module.exports = {
     'no-new-wrappers': 'error',
     'no-obj-calls': 'error',
     'no-octal': 'error',
-    'no-redeclare': 'error',
     'no-regex-spaces': 'error',
     'no-self-assign': 'error',
     'no-sparse-arrays': 'error',
     'no-sequences': 'error',
     'no-this-before-super': 'error',
-    'no-throw-literal': 'error',
     'no-trailing-spaces': 'error',
     'no-var': 'error',
     'no-unexpected-multiline': 'error',
@@ -111,7 +84,6 @@ module.exports = {
     'no-unreachable': 'error',
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
-    'no-unused-expressions': 'error',
     'no-unused-labels': 'error',
     'no-useless-escape': 'error',
     'one-var': ['error', 'never'],
@@ -145,6 +117,18 @@ module.exports = {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/ban-types': 'error',
+
+    'comma-dangle': 'off',
+    '@typescript-eslint/comma-dangle': [
+      'error',
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'always-multiline',
+      },
+    ],
 
     '@typescript-eslint/naming-convention': [
       'error',
@@ -243,6 +227,9 @@ module.exports = {
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': 'error',
 
+    'no-dupe-class-members': 'off',
+    '@typescript-eslint/no-dupe-class-members': 'error',
+
     'no-empty-function': 'off',
     '@typescript-eslint/no-empty-function': [
       'error',
@@ -251,9 +238,27 @@ module.exports = {
       },
     ],
 
+    'no-extra-semi': 'off',
+    '@typescript-eslint/no-extra-semi': 'error',
+
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
     '@typescript-eslint/no-inferrable-types': 'error',
+
+    'keyword-spacing': 'off',
+    '@typescript-eslint/keyword-spacing': [
+      'error',
+      {
+        before: true,
+        after: true,
+        overrides: {
+          return: { after: true },
+          throw: { after: true },
+          case: { after: true },
+        },
+      },
+    ],
+
     '@typescript-eslint/no-misused-new': 'error',
     '@typescript-eslint/no-namespace': 'error',
     '@typescript-eslint/no-parameter-properties': [
@@ -267,6 +272,12 @@ module.exports = {
         ],
       },
     ],
+
+    'no-redeclare': 'off',
+    '@typescript-eslint/no-redeclare': 'error',
+
+    'no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-expressions': 'error',
 
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
@@ -315,6 +326,12 @@ module.exports = {
     '@typescript-eslint/type-annotation-spacing': 'error',
 
     /** Requiring type checking */
+    'dot-notation': 'off',
+    '@typescript-eslint/dot-notation': 'error',
+
+    'no-throw-literal': 'off',
+    '@typescript-eslint/no-throw-literal': 'error',
+
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
   },
 };
